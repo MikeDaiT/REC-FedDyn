@@ -1,0 +1,65 @@
+{
+  "settings": {
+    "clients": 20,
+    "classes": 10,
+    "feature_dimension": 512,
+    "dirichlet_concentration": 0.1,
+    "communication_rounds": 500,
+    "l2_regularization": 1e-05,
+    "proximal_parameter": 1.0,
+    "relaxation_parameter": 1.0,
+    "sigma_squared": 0.99,
+    "initial_local_updates": 10,
+    "maximum_refinements": 100,
+    "increase_initial_updates": true,
+    "seed": 0,
+    "dtype": "float32",
+    "smoothness_power_iterations": 40
+  },
+  "device": "cuda",
+  "paper_configuration": {
+    "backbone": "ImageNet-pretrained torchvision ResNet18",
+    "backbone_frozen": true,
+    "adaptive_pooling": true,
+    "input_resized": false,
+    "full_client_participation": true,
+    "deterministic_full_client_gradients": true,
+    "client_objective_weighting": "uniform across clients"
+  },
+  "implementation_notes": {
+    "partition": "deterministic class-wise Dirichlet draw; it matches the paper's distributional setup but not an unpublished exact index draw",
+    "smoothness": {
+      "per_client_estimates": [
+        107.08140443622617,
+        106.40192957787481,
+        106.4303766313773,
+        108.03443720588236,
+        129.19605873832614,
+        114.93142994432472,
+        132.05312596232181,
+        120.15065303315413,
+        129.1387814431382,
+        131.41087270190897,
+        105.76368159173313,
+        94.37055657053781,
+        114.61521470383276,
+        125.39105023129922,
+        102.1376358925216,
+        102.07294008954302,
+        98.79379311502856,
+        109.7850466090934,
+        102.26056107257419,
+        94.19516416452772
+      ],
+      "algorithm_value": 132.05312596232181,
+      "rule": "1.01 * 0.5 * ||[X,1]||_2^2 / n + l2"
+    }
+  },
+  "outputs": {
+    "history": "ifeddr_history.csv",
+    "partition": "client_label_distribution.csv",
+    "paper_figure": "figure3_ifeddr_linear_probing.png",
+    "diagnostics": "ifeddr_diagnostics.png",
+    "checkpoint": "ifeddr_checkpoint.pt"
+  }
+}

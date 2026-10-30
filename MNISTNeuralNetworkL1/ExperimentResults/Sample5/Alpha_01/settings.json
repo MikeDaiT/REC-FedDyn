@@ -1,0 +1,13 @@
+{
+  "format": "mnist_problem_v1",
+  "clients_number": 20,
+  "sampling_number": 5,
+  "dirichlet_concentration": 0.1,
+  "training_samples": 60000,
+  "test_samples": 10000,
+  "classes_number": 10,
+  "hidden_units": 32,
+  "l1_regularization": 0.0001,
+  "data_seed": 7,
+  "model_seed": 7
+}

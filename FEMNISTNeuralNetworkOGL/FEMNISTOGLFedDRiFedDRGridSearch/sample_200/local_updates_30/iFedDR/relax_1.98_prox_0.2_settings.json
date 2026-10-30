@@ -1,0 +1,28 @@
+{
+  "format": "femnist_ogl_feddr_ifeddr_grid_candidate_v1",
+  "problem_key": "c7d1c93cad56ef38",
+  "algorithm": "iFedDR",
+  "proximal_parameter": 0.2,
+  "relaxation_parameter": 1.98,
+  "stationarity_parameter": 0.2,
+  "algorithm_parameters": {
+    "ProximalParameter": 0.2,
+    "RelaxationParameter": 1.98,
+    "SigmaSquared": 0.99,
+    "InitialLocalUpdates": 30,
+    "RefinementFactor": 2.0,
+    "MaxRefinements": 100,
+    "MaxLocalIterations": 100,
+    "LocalLearningRate": 0.01
+  },
+  "clients_number": 200,
+  "sampling_number": 200,
+  "client_partitioning": "natural_writer_id",
+  "iteration_budget": 300,
+  "local_updates": 30,
+  "local_learning_rate": 0.01,
+  "ogl_regularization": 0.1,
+  "data_seed": 7,
+  "model_seed": 130,
+  "algorithm_seed": 7
+}

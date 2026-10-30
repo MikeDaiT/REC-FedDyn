@@ -1,0 +1,426 @@
+{
+  "settings": {
+    "format": "haxby_tv_logistic_five_seed_aggregate_v1",
+    "algorithm_seeds": [
+      123,
+      124,
+      125,
+      126,
+      127
+    ],
+    "seed_settings": {
+      "123": {
+        "problem_key": "972cf50f93d70fe9",
+        "problem_settings": {
+          "format": "haxby_tv_logistic_problem_v1",
+          "reference_key": "1caca2ff63cafb0f6fe6c50060101b859bed80206b7265d8a68bef807bff8160",
+          "volume_shape": [
+            48,
+            61,
+            52
+          ],
+          "clients_number": 59,
+          "samples_per_client": 18,
+          "sampling_number": 15,
+          "tv_regularization": 0.001,
+          "smoothness": 25004.599954691395
+        },
+        "algorithm_keys": {
+          "REC_FedDyn": "bbead7ab48f0e9a6",
+          "FedDR": "93aa227b88852f83",
+          "iFedDR": "88c19d2d39cde1d2"
+        },
+        "algorithm_settings": {
+          "REC_FedDyn": {
+            "format": "haxby_tv_logistic_algorithm_v1",
+            "algorithm": "REC_FedDyn",
+            "implementation": "fmri_tensor_rec_feddyn_v1",
+            "problem_key": "972cf50f93d70fe9",
+            "algorithm_seed": 123,
+            "tv_proximal_accuracy": 1e-05,
+            "tv_proximal_max_iterations": 120,
+            "step_size_factor": 300.0,
+            "local_solver": "Nesterov accelerated gradient for all four algorithms",
+            "penalty": 83.34866651563799,
+            "rec_feddyn_sigma": 0.9,
+            "rec_feddyn_max_local_iterations": 500
+          },
+          "FedDR": {
+            "format": "haxby_tv_logistic_algorithm_v1",
+            "algorithm": "FedDR",
+            "implementation": "fmri_tensor_feddr",
+            "problem_key": "972cf50f93d70fe9",
+            "algorithm_seed": 123,
+            "tv_proximal_accuracy": 1e-05,
+            "tv_proximal_max_iterations": 120,
+            "step_size_factor": 300.0,
+            "local_solver": "Nesterov accelerated gradient for all four algorithms",
+            "step_size": 0.011997792427937389,
+            "local_updates": 10,
+            "feddr_relaxation": 1.0
+          },
+          "iFedDR": {
+            "format": "haxby_tv_logistic_algorithm_v1",
+            "algorithm": "iFedDR",
+            "implementation": "fmri_tensor_ifeddr_corrected_zeta_scaling",
+            "problem_key": "972cf50f93d70fe9",
+            "algorithm_seed": 123,
+            "tv_proximal_accuracy": 1e-05,
+            "tv_proximal_max_iterations": 120,
+            "step_size_factor": 300.0,
+            "local_solver": "Nesterov accelerated gradient for all four algorithms",
+            "step_size": 0.011997792427937389,
+            "local_updates": 20,
+            "ifeddr_relaxation": 1.0,
+            "ifeddr_sigma_squared": 0.99,
+            "ifeddr_refinement_factor": 2.0,
+            "ifeddr_max_refinements": 10,
+            "ifeddr_increase_initial_updates": false,
+            "ifeddr_continue_after_max_refinements": true
+          }
+        },
+        "iteration_budget": 15000,
+        "ifeddr_gradient_oracle_budget": 5000000,
+        "ifeddr_oracle_check_interval": 1000
+      },
+      "124": {
+        "problem_key": "972cf50f93d70fe9",
+        "problem_settings": {
+          "format": "haxby_tv_logistic_problem_v1",
+          "reference_key": "1caca2ff63cafb0f6fe6c50060101b859bed80206b7265d8a68bef807bff8160",
+          "volume_shape": [
+            48,
+            61,
+            52
+          ],
+          "clients_number": 59,
+          "samples_per_client": 18,
+          "sampling_number": 15,
+          "tv_regularization": 0.001,
+          "smoothness": 25004.599954691395
+        },
+        "algorithm_keys": {
+          "REC_FedDyn": "172706993e1d7bc9",
+          "FedDR": "87bda1e546ac99d3",
+          "iFedDR": "4a0999edf1855cf7"
+        },
+        "algorithm_settings": {
+          "REC_FedDyn": {
+            "format": "haxby_tv_logistic_algorithm_v1",
+            "algorithm": "REC_FedDyn",
+            "implementation": "fmri_tensor_rec_feddyn_v1",
+            "problem_key": "972cf50f93d70fe9",
+            "algorithm_seed": 124,
+            "tv_proximal_accuracy": 1e-05,
+            "tv_proximal_max_iterations": 120,
+            "step_size_factor": 300.0,
+            "local_solver": "Nesterov accelerated gradient for all four algorithms",
+            "penalty": 83.34866651563799,
+            "rec_feddyn_sigma": 0.9,
+            "rec_feddyn_max_local_iterations": 500
+          },
+          "FedDR": {
+            "format": "haxby_tv_logistic_algorithm_v1",
+            "algorithm": "FedDR",
+            "implementation": "fmri_tensor_feddr",
+            "problem_key": "972cf50f93d70fe9",
+            "algorithm_seed": 124,
+            "tv_proximal_accuracy": 1e-05,
+            "tv_proximal_max_iterations": 120,
+            "step_size_factor": 300.0,
+            "local_solver": "Nesterov accelerated gradient for all four algorithms",
+            "step_size": 0.011997792427937389,
+            "local_updates": 10,
+            "feddr_relaxation": 1.0
+          },
+          "iFedDR": {
+            "format": "haxby_tv_logistic_algorithm_v1",
+            "algorithm": "iFedDR",
+            "implementation": "fmri_tensor_ifeddr_corrected_zeta_scaling",
+            "problem_key": "972cf50f93d70fe9",
+            "algorithm_seed": 124,
+            "tv_proximal_accuracy": 1e-05,
+            "tv_proximal_max_iterations": 120,
+            "step_size_factor": 300.0,
+            "local_solver": "Nesterov accelerated gradient for all four algorithms",
+            "step_size": 0.011997792427937389,
+            "local_updates": 20,
+            "ifeddr_relaxation": 1.0,
+            "ifeddr_sigma_squared": 0.99,
+            "ifeddr_refinement_factor": 2.0,
+            "ifeddr_max_refinements": 10,
+            "ifeddr_increase_initial_updates": false,
+            "ifeddr_continue_after_max_refinements": true
+          }
+        },
+        "iteration_budget": 15000,
+        "ifeddr_gradient_oracle_budget": 5000000,
+        "ifeddr_oracle_check_interval": 1000
+      },
+      "125": {
+        "problem_key": "972cf50f93d70fe9",
+        "problem_settings": {
+          "format": "haxby_tv_logistic_problem_v1",
+          "reference_key": "1caca2ff63cafb0f6fe6c50060101b859bed80206b7265d8a68bef807bff8160",
+          "volume_shape": [
+            48,
+            61,
+            52
+          ],
+          "clients_number": 59,
+          "samples_per_client": 18,
+          "sampling_number": 15,
+          "tv_regularization": 0.001,
+          "smoothness": 25004.599954691395
+        },
+        "algorithm_keys": {
+          "REC_FedDyn": "af50a37ab7d0666b",
+          "FedDR": "5727ed2f95093f46",
+          "iFedDR": "25e1276d561bf470"
+        },
+        "algorithm_settings": {
+          "REC_FedDyn": {
+            "format": "haxby_tv_logistic_algorithm_v1",
+            "algorithm": "REC_FedDyn",
+            "implementation": "fmri_tensor_rec_feddyn_v1",
+            "problem_key": "972cf50f93d70fe9",
+            "algorithm_seed": 125,
+            "tv_proximal_accuracy": 1e-05,
+            "tv_proximal_max_iterations": 120,
+            "step_size_factor": 300.0,
+            "local_solver": "Nesterov accelerated gradient for all four algorithms",
+            "penalty": 83.34866651563799,
+            "rec_feddyn_sigma": 0.9,
+            "rec_feddyn_max_local_iterations": 500
+          },
+          "FedDR": {
+            "format": "haxby_tv_logistic_algorithm_v1",
+            "algorithm": "FedDR",
+            "implementation": "fmri_tensor_feddr",
+            "problem_key": "972cf50f93d70fe9",
+            "algorithm_seed": 125,
+            "tv_proximal_accuracy": 1e-05,
+            "tv_proximal_max_iterations": 120,
+            "step_size_factor": 300.0,
+            "local_solver": "Nesterov accelerated gradient for all four algorithms",
+            "step_size": 0.011997792427937389,
+            "local_updates": 10,
+            "feddr_relaxation": 1.0
+          },
+          "iFedDR": {
+            "format": "haxby_tv_logistic_algorithm_v1",
+            "algorithm": "iFedDR",
+            "implementation": "fmri_tensor_ifeddr_corrected_zeta_scaling",
+            "problem_key": "972cf50f93d70fe9",
+            "algorithm_seed": 125,
+            "tv_proximal_accuracy": 1e-05,
+            "tv_proximal_max_iterations": 120,
+            "step_size_factor": 300.0,
+            "local_solver": "Nesterov accelerated gradient for all four algorithms",
+            "step_size": 0.011997792427937389,
+            "local_updates": 20,
+            "ifeddr_relaxation": 1.0,
+            "ifeddr_sigma_squared": 0.99,
+            "ifeddr_refinement_factor": 2.0,
+            "ifeddr_max_refinements": 10,
+            "ifeddr_increase_initial_updates": false,
+            "ifeddr_continue_after_max_refinements": true
+          }
+        },
+        "iteration_budget": 15000,
+        "ifeddr_gradient_oracle_budget": 5000000,
+        "ifeddr_oracle_check_interval": 1000
+      },
+      "126": {
+        "problem_key": "972cf50f93d70fe9",
+        "problem_settings": {
+          "format": "haxby_tv_logistic_problem_v1",
+          "reference_key": "1caca2ff63cafb0f6fe6c50060101b859bed80206b7265d8a68bef807bff8160",
+          "volume_shape": [
+            48,
+            61,
+            52
+          ],
+          "clients_number": 59,
+          "samples_per_client": 18,
+          "sampling_number": 15,
+          "tv_regularization": 0.001,
+          "smoothness": 25004.599954691395
+        },
+        "algorithm_keys": {
+          "REC_FedDyn": "51d25f668f346675",
+          "FedDR": "a32dfd5a4742ac4d",
+          "iFedDR": "2d2a132e7ef05737"
+        },
+        "algorithm_settings": {
+          "REC_FedDyn": {
+            "format": "haxby_tv_logistic_algorithm_v1",
+            "algorithm": "REC_FedDyn",
+            "implementation": "fmri_tensor_rec_feddyn_v1",
+            "problem_key": "972cf50f93d70fe9",
+            "algorithm_seed": 126,
+            "tv_proximal_accuracy": 1e-05,
+            "tv_proximal_max_iterations": 120,
+            "step_size_factor": 300.0,
+            "local_solver": "Nesterov accelerated gradient for all four algorithms",
+            "penalty": 83.34866651563799,
+            "rec_feddyn_sigma": 0.9,
+            "rec_feddyn_max_local_iterations": 500
+          },
+          "FedDR": {
+            "format": "haxby_tv_logistic_algorithm_v1",
+            "algorithm": "FedDR",
+            "implementation": "fmri_tensor_feddr",
+            "problem_key": "972cf50f93d70fe9",
+            "algorithm_seed": 126,
+            "tv_proximal_accuracy": 1e-05,
+            "tv_proximal_max_iterations": 120,
+            "step_size_factor": 300.0,
+            "local_solver": "Nesterov accelerated gradient for all four algorithms",
+            "step_size": 0.011997792427937389,
+            "local_updates": 10,
+            "feddr_relaxation": 1.0
+          },
+          "iFedDR": {
+            "format": "haxby_tv_logistic_algorithm_v1",
+            "algorithm": "iFedDR",
+            "implementation": "fmri_tensor_ifeddr_corrected_zeta_scaling",
+            "problem_key": "972cf50f93d70fe9",
+            "algorithm_seed": 126,
+            "tv_proximal_accuracy": 1e-05,
+            "tv_proximal_max_iterations": 120,
+            "step_size_factor": 300.0,
+            "local_solver": "Nesterov accelerated gradient for all four algorithms",
+            "step_size": 0.011997792427937389,
+            "local_updates": 20,
+            "ifeddr_relaxation": 1.0,
+            "ifeddr_sigma_squared": 0.99,
+            "ifeddr_refinement_factor": 2.0,
+            "ifeddr_max_refinements": 10,
+            "ifeddr_increase_initial_updates": false,
+            "ifeddr_continue_after_max_refinements": true
+          }
+        },
+        "iteration_budget": 15000,
+        "ifeddr_gradient_oracle_budget": 5000000,
+        "ifeddr_oracle_check_interval": 1000
+      },
+      "127": {
+        "problem_key": "972cf50f93d70fe9",
+        "problem_settings": {
+          "format": "haxby_tv_logistic_problem_v1",
+          "reference_key": "1caca2ff63cafb0f6fe6c50060101b859bed80206b7265d8a68bef807bff8160",
+          "volume_shape": [
+            48,
+            61,
+            52
+          ],
+          "clients_number": 59,
+          "samples_per_client": 18,
+          "sampling_number": 15,
+          "tv_regularization": 0.001,
+          "smoothness": 25004.599954691395
+        },
+        "algorithm_keys": {
+          "REC_FedDyn": "5a253c55f4ea7846",
+          "FedDR": "40e593dd13efc717",
+          "iFedDR": "e19e0c79f1cb45c7"
+        },
+        "algorithm_settings": {
+          "REC_FedDyn": {
+            "format": "haxby_tv_logistic_algorithm_v1",
+            "algorithm": "REC_FedDyn",
+            "implementation": "fmri_tensor_rec_feddyn_v1",
+            "problem_key": "972cf50f93d70fe9",
+            "algorithm_seed": 127,
+            "tv_proximal_accuracy": 1e-05,
+            "tv_proximal_max_iterations": 120,
+            "step_size_factor": 300.0,
+            "local_solver": "Nesterov accelerated gradient for all four algorithms",
+            "penalty": 83.34866651563799,
+            "rec_feddyn_sigma": 0.9,
+            "rec_feddyn_max_local_iterations": 500
+          },
+          "FedDR": {
+            "format": "haxby_tv_logistic_algorithm_v1",
+            "algorithm": "FedDR",
+            "implementation": "fmri_tensor_feddr",
+            "problem_key": "972cf50f93d70fe9",
+            "algorithm_seed": 127,
+            "tv_proximal_accuracy": 1e-05,
+            "tv_proximal_max_iterations": 120,
+            "step_size_factor": 300.0,
+            "local_solver": "Nesterov accelerated gradient for all four algorithms",
+            "step_size": 0.011997792427937389,
+            "local_updates": 10,
+            "feddr_relaxation": 1.0
+          },
+          "iFedDR": {
+            "format": "haxby_tv_logistic_algorithm_v1",
+            "algorithm": "iFedDR",
+            "implementation": "fmri_tensor_ifeddr_corrected_zeta_scaling",
+            "problem_key": "972cf50f93d70fe9",
+            "algorithm_seed": 127,
+            "tv_proximal_accuracy": 1e-05,
+            "tv_proximal_max_iterations": 120,
+            "step_size_factor": 300.0,
+            "local_solver": "Nesterov accelerated gradient for all four algorithms",
+            "step_size": 0.011997792427937389,
+            "local_updates": 20,
+            "ifeddr_relaxation": 1.0,
+            "ifeddr_sigma_squared": 0.99,
+            "ifeddr_refinement_factor": 2.0,
+            "ifeddr_max_refinements": 10,
+            "ifeddr_increase_initial_updates": false,
+            "ifeddr_continue_after_max_refinements": true
+          }
+        },
+        "iteration_budget": 15000,
+        "ifeddr_gradient_oracle_budget": 5000000,
+        "ifeddr_oracle_check_interval": 1000
+      }
+    },
+    "iteration_budget": 15000
+  },
+  "reference": {
+    "file": "C:\\Python_Works\\DiaADMM_RelaInexact\\Results\\HaxbyTVLogisticRegression\\reference_cache\\haxby_tv_logistic_seed2026_1caca2ff63cafb0f.npz",
+    "problem_key": "1caca2ff63cafb0f6fe6c50060101b859bed80206b7265d8a68bef807bff8160",
+    "objective_value": 0.4882546770019208,
+    "iterations": 70000,
+    "residual": 0.002110325068582174,
+    "accepted_residual": 0.00212,
+    "used_without_replacement": true
+  },
+  "algorithms": {
+    "REC_FedDyn": {
+      "seed_count": 5,
+      "final_function_error_mean": 0.010786464219200154,
+      "final_function_error_min": 0.01078584370179092,
+      "final_function_error_max": 0.010787196566574453,
+      "final_test_accuracy_mean": 0.8472222222222221,
+      "final_test_accuracy_min": 0.8472222222222222,
+      "final_test_accuracy_max": 0.8472222222222222,
+      "mean_model_available_at_reported_round": true
+    },
+    "FedDR": {
+      "seed_count": 5,
+      "final_function_error_mean": 0.10567348476992522,
+      "final_function_error_min": 0.10563592271595112,
+      "final_function_error_max": 0.10571223984289546,
+      "final_test_accuracy_mean": 0.7527777777777779,
+      "final_test_accuracy_min": 0.75,
+      "final_test_accuracy_max": 0.7546296296296297,
+      "mean_model_available_at_reported_round": true
+    },
+    "iFedDR": {
+      "seed_count": 5,
+      "final_function_error_mean": 0.10054632986199163,
+      "final_function_error_min": 0.1002841595135382,
+      "final_function_error_max": 0.10071437719975629,
+      "final_test_accuracy_mean": 0.750925925925926,
+      "final_test_accuracy_min": 0.7453703703703703,
+      "final_test_accuracy_max": 0.7546296296296297,
+      "mean_model_available_at_reported_round": true
+    }
+  }
+}

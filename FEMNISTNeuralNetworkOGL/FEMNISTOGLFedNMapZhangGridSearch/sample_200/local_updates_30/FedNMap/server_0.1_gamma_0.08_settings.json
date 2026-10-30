@@ -1,0 +1,24 @@
+{
+  "format": "femnist_ogl_fednmap_zhang_grid_candidate_v2",
+  "problem_key": "c7d1c93cad56ef38",
+  "algorithm": "FedNMap",
+  "gamma": 0.08,
+  "server_learning_rate": 0.1,
+  "local_learning_rate": 0.0026666666666666666,
+  "stationarity_parameter": 0.008,
+  "algorithm_parameters": {
+    "ProximalParameter": 0.008,
+    "LocalLearningRate": 0.0026666666666666666,
+    "ServerLearningRate": 0.1,
+    "LocalUpdates": 30
+  },
+  "clients_number": 200,
+  "sampling_number": 200,
+  "client_partitioning": "natural_writer_id",
+  "iteration_budget": 300,
+  "local_updates": 30,
+  "ogl_regularization": 0.1,
+  "data_seed": 7,
+  "model_seed": 130,
+  "algorithm_seed": 7
+}

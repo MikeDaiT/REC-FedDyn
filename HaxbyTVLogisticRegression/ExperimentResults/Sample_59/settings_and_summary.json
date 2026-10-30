@@ -1,0 +1,120 @@
+{
+  "settings": {
+    "problem_key": "c9489d3e9d8862c1",
+    "problem_settings": {
+      "format": "haxby_tv_logistic_problem_v1",
+      "reference_key": "1caca2ff63cafb0f6fe6c50060101b859bed80206b7265d8a68bef807bff8160",
+      "volume_shape": [
+        48,
+        61,
+        52
+      ],
+      "clients_number": 59,
+      "samples_per_client": 18,
+      "sampling_number": 59,
+      "tv_regularization": 0.001,
+      "smoothness": 25004.599954691395
+    },
+    "algorithm_keys": {
+      "REC_FedDyn": "95f77c402cd842d2",
+      "FedDR": "9d46cd5fd4239a8c",
+      "iFedDR": "9da4df675698c733"
+    },
+    "algorithm_settings": {
+      "REC_FedDyn": {
+        "format": "haxby_tv_logistic_algorithm_v1",
+        "algorithm": "REC_FedDyn",
+        "implementation": "fmri_tensor_rec_feddyn_v1",
+        "problem_key": "c9489d3e9d8862c1",
+        "algorithm_seed": 123,
+        "tv_proximal_accuracy": 1e-05,
+        "tv_proximal_max_iterations": 120,
+        "step_size_factor": 300.0,
+        "local_solver": "Nesterov accelerated gradient for all four algorithms",
+        "penalty": 83.34866651563799,
+        "rec_feddyn_sigma": 0.9,
+        "rec_feddyn_max_local_iterations": 500
+      },
+      "FedDR": {
+        "format": "haxby_tv_logistic_algorithm_v1",
+        "algorithm": "FedDR",
+        "implementation": "fmri_tensor_feddr",
+        "problem_key": "c9489d3e9d8862c1",
+        "algorithm_seed": 123,
+        "tv_proximal_accuracy": 1e-05,
+        "tv_proximal_max_iterations": 120,
+        "step_size_factor": 300.0,
+        "local_solver": "Nesterov accelerated gradient for all four algorithms",
+        "step_size": 0.011997792427937389,
+        "local_updates": 10,
+        "feddr_relaxation": 1.0
+      },
+      "iFedDR": {
+        "format": "haxby_tv_logistic_algorithm_v1",
+        "algorithm": "iFedDR",
+        "implementation": "fmri_tensor_ifeddr_corrected_zeta_scaling",
+        "problem_key": "c9489d3e9d8862c1",
+        "algorithm_seed": 123,
+        "tv_proximal_accuracy": 1e-05,
+        "tv_proximal_max_iterations": 120,
+        "step_size_factor": 300.0,
+        "local_solver": "Nesterov accelerated gradient for all four algorithms",
+        "step_size": 0.011997792427937389,
+        "local_updates": 10,
+        "ifeddr_relaxation": 1.0,
+        "ifeddr_sigma_squared": 0.99,
+        "ifeddr_refinement_factor": 2.0,
+        "ifeddr_max_refinements": 100,
+        "ifeddr_increase_initial_updates": true
+      }
+    },
+    "iteration_budget": 15000
+  },
+  "reference": {
+    "file": "C:\\Python_Works\\DiaADMM_RelaInexact\\Results\\HaxbyTVLogisticRegression\\reference_cache\\haxby_tv_logistic_seed2026_1caca2ff63cafb0f.npz",
+    "problem_key": "1caca2ff63cafb0f6fe6c50060101b859bed80206b7265d8a68bef807bff8160",
+    "objective_value": 0.4882546770019208,
+    "iterations": 70000,
+    "residual": 0.002110325068582174,
+    "accepted_residual": 0.00212,
+    "used_without_replacement": true
+  },
+  "algorithms": {
+    "REC_FedDyn": {
+      "completed_rounds": 15000,
+      "final_function_value": 0.49903838845898846,
+      "final_test_accuracy": 0.8472222222222222,
+      "gradient_oracles_in_rounds": 9626672,
+      "gradient_oracles_initialization": 0,
+      "gradient_oracles_total": 9626672,
+      "unsatisfied_rounds": null,
+      "refinements": null,
+      "model_available_at_reported_round": false,
+      "truncated_from_round": 40000
+    },
+    "FedDR": {
+      "completed_rounds": 15000,
+      "final_function_value": 0.5380545845706552,
+      "final_test_accuracy": 0.7916666666666666,
+      "gradient_oracles_in_rounds": 8850000,
+      "gradient_oracles_initialization": 590,
+      "gradient_oracles_total": 8850590,
+      "unsatisfied_rounds": null,
+      "refinements": null,
+      "model_available_at_reported_round": false,
+      "truncated_from_round": 40000
+    },
+    "iFedDR": {
+      "completed_rounds": 15000,
+      "final_function_value": 0.49946307659796657,
+      "final_test_accuracy": 0.8472222222222222,
+      "gradient_oracles_in_rounds": 63525300,
+      "gradient_oracles_initialization": 0,
+      "gradient_oracles_total": 63525300,
+      "unsatisfied_rounds": 0,
+      "refinements": 15010,
+      "model_available_at_reported_round": true,
+      "truncated_from_round": null
+    }
+  }
+}

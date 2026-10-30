@@ -1,0 +1,13 @@
+{
+  "format": "bsds300_tv_inpainting_algorithm_v1",
+  "algorithm": "REC_FedDyn",
+  "problem_key": "54fbf90515a06f97",
+  "image_id": "108005",
+  "heterogeneity_level": 2,
+  "algorithm_seed": 125,
+  "tv_proximal_accuracy": 1e-05,
+  "tv_proximal_max_iterations": 120,
+  "stepsize": 1.0,
+  "penalty_parameter": 1.0,
+  "relative_error": 0.1
+}

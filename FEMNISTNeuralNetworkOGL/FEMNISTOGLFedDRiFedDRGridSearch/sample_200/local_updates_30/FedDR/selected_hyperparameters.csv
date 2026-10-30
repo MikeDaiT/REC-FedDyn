@@ -1,0 +1,2 @@
+algorithm,relaxation_parameter,proximal_parameter,local_learning_rate,final_gradient_mapping_norm,final_loss,final_test_accuracy,inactive_group_fraction,cumulative_gradient_oracles,algorithm_time_seconds,total_refinements,relative_error_success_fraction,status
+FedDR,0.5,3.0,0.01,1.5779883861541748,1.8150750398635864,0.5444457155931816,0.0,1806000,2356.475830078125,nan,nan,completed

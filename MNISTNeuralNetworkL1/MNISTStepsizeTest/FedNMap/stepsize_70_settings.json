@@ -1,0 +1,22 @@
+{
+  "format": "mnist_stepsize_candidate_v1",
+  "algorithm": "FedNMap",
+  "overall_stepsize": 70.0,
+  "algorithm_parameters": {
+    "ProximalParameter": 70.0,
+    "LocalLearningRate": 7.0,
+    "ServerLearningRate": 1.0,
+    "LocalUpdates": 10
+  },
+  "clients_number": 20,
+  "sampling_number": 20,
+  "dirichlet_concentration": 10.0,
+  "training_samples": 60000,
+  "test_samples": 10000,
+  "iteration_budget": 1000,
+  "local_updates": 10,
+  "l1_regularization": 0.0001,
+  "data_seed": 7,
+  "model_seed": 7,
+  "algorithm_seed": 7
+}

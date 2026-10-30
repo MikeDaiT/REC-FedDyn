@@ -1,0 +1,69 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments and local package builds
+.venv/
+venv/
+env/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# Local environment variables and credentials
+.env
+.env.*
+!.env.example
+
+# Editor and operating-system files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+~$*
+
+# Runtime checkpoints and model caches
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.pickle
+
+# Raw or processed datasets
+**/Data/
+**/FEMNIST/
+**/cifar-10-batches-py/
+**/haxby2001/
+*.npy
+*.nii
+*.nii.gz
+
+# Runtime output directories from the four main experiments.
+# Curated ExperimentResults and tuning-result directories remain trackable.
+/TVInpainting/Results/
+/MNISTNeuralNetworkL1/Results/
+/FEMNISTNeuralNetworkOGL/Results/
+/HaxbyTVLogisticRegression/Results/
+
+# Obsolete tuning artifacts that are not part of the reported comparisons
+/MNISTNeuralNetworkL1/MNISTStepsizeTest/FedDyn/
+/HaxbyTVLogisticRegression/step_size_selection/feddyn_step_size_curves.png
+/HaxbyTVLogisticRegression/step_size_selection/feddyn_step_size_curves.pdf
+
+# Local Codex workspace metadata
+.codex/
+.agents/

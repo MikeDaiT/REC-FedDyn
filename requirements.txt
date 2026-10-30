@@ -1,0 +1,8 @@
+numpy
+torch
+torchvision
+matplotlib
+Pillow
+pandas
+nibabel
+pyarrow

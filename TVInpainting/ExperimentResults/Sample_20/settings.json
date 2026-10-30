@@ -1,0 +1,9 @@
+{
+  "format": "bsds300_tv_inpainting_problem_v1",
+  "reference_key": "3d02b373ebd76163",
+  "clients_number": 20,
+  "sampling_number": 20,
+  "data_seed": 2026,
+  "ridge_mu": 0.001,
+  "tv_regularization": 0.02
+}

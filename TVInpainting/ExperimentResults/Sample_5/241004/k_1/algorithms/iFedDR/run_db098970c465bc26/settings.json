@@ -1,0 +1,17 @@
+{
+  "format": "bsds300_tv_inpainting_algorithm_v1",
+  "algorithm": "iFedDR",
+  "problem_key": "8fdc250788bed037",
+  "image_id": "241004",
+  "heterogeneity_level": 1,
+  "algorithm_seed": 124,
+  "tv_proximal_accuracy": 1e-05,
+  "tv_proximal_max_iterations": 120,
+  "proximal_parameter": 1.0,
+  "relaxation_parameter": 1.0,
+  "sigma_squared": 0.99,
+  "initial_local_updates": 5,
+  "refinement_factor": 2.0,
+  "max_refinements": 100,
+  "increase_initial_updates": true
+}
